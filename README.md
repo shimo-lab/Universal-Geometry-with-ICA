@@ -1,10 +1,8 @@
 # Universal-Geometry-with-ICA
 
-**Discovering Universal Geometry in Embeddings with ICA**
-
-- Hiroaki Yamagiwa
-- Momose Oyama
-- Hidetoshi Shimodaira
+> [Discovering Universal Geometry in Embeddings with ICA](https://aclanthology.org/2023.emnlp-main.283/)                 
+> [Hiroaki Yamagiwa](https://ymgw55.github.io/)\*, [Momose Oyama](https://momoseoyama.github.io/)\*, [Hidetoshi Shimodaira](http://stat.sys.i.kyoto-u.ac.jp/members/shimo/)                 
+> *EMNLP 2023*
 
 ## English word embeddings
 
@@ -53,13 +51,30 @@
   </tr>
 </table>
 
-
-## Paper
-
-- [arxiv 2305.13175](https://arxiv.org/abs/2305.13175)
-- EMNLP 2023 main
-
-
 ## Code and Data
 
 in preparation
+
+
+## Citation
+If you find our code or data useful in your research, please cite our paper:
+```
+@inproceedings{DBLP:conf/emnlp/YamagiwaOS23,
+  author       = {Hiroaki Yamagiwa and
+                  Momose Oyama and
+                  Hidetoshi Shimodaira},
+  editor       = {Houda Bouamor and
+                  Juan Pino and
+                  Kalika Bali},
+  title        = {Discovering Universal Geometry in Embeddings with {ICA}},
+  booktitle    = {Proceedings of the 2023 Conference on Empirical Methods in Natural
+                  Language Processing, {EMNLP} 2023, Singapore, December 6-10, 2023},
+  pages        = {4647--4675},
+  publisher    = {Association for Computational Linguistics},
+  year         = {2023},
+  url          = {https://aclanthology.org/2023.emnlp-main.283},
+  timestamp    = {Wed, 13 Dec 2023 17:20:20 +0100},
+  biburl       = {https://dblp.org/rec/conf/emnlp/YamagiwaOS23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+```
