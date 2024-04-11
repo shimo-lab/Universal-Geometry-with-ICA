@@ -53,7 +53,8 @@
 
 ## Code and Data
 
-in preparation
+- The code for English embeddings is currently being prepared.
+- For cross-lingual embeddings, dynamic embeddings, and image model embeddings, please refer to the [universal](universal/) directory.
 
 
 ## Citation
