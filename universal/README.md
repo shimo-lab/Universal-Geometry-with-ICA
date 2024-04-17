@@ -94,7 +94,7 @@ We used the 157 languages fastText [1]. Download the embeddings as follows:
 <!-- TRANSLATION_END -->
 
 ```bash
-./scripts/get_157_vectors.sh
+./scripts/get_157langs_vectors.sh
 ```
 
 <!-- TRANSLATION_START -->

@@ -102,7 +102,7 @@ We used the 157 languages fastText [1]. Download the embeddings as follows:
 
 
 ```bash
-./scripts/get_157_vectors.sh
+./scripts/get_157langs_vectors.sh
 ```
 
 <!--
