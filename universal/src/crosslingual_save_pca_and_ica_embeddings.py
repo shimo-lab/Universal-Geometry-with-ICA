@@ -253,7 +253,7 @@ def main():
     logger.info(f'ica_params: {ica_params}')
     ica = FastICA(**ica_params)
     ica.fit(pca_embed)
-    R = ica.mixing_
+    R = ica.components_.T
     ica_embed = pca_embed @ R
 
     # save embeddings
