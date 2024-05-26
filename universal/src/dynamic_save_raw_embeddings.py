@@ -21,6 +21,8 @@ def parse_args():
     parser.add_argument('--num_token', type=int, default=100000)
     parser.add_argument('--batch_size', type=int, default=512)
 
+    return parser.parse_args()
+
 
 def main():
 
