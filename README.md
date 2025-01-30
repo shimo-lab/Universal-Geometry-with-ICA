@@ -53,7 +53,7 @@
 
 ## Code and Data
 
-- The code for English embeddings is currently being prepared.
+- The code for English embeddings is available in the [geometry](geometry/) directory.
 - For cross-lingual embeddings, dynamic embeddings, and image model embeddings, please refer to the [universal](universal/) directory.
 
 
