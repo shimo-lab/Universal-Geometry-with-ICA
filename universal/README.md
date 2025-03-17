@@ -769,20 +769,23 @@ We used publicly available repositories. We are especially grateful for the foll
 
 ### Paper
 
-[1] Edouard Grave, Piotr Bojanowski, Prakhar Gupta, Armand Joulin, and Tomás Mikolov. Learning word vectors for 157 languages. LREC 2018.
+[1] Edouard Grave, Piotr Bojanowski, Prakhar Gupta, Armand Joulin, and Tomás Mikolov. [Learning word vectors for 157 languages](https://aclanthology.org/L18-1550/). LREC 2018.
 
-[2] Guillaume Lample, Alexis Conneau, Marc’Aurelio Ranzato, Ludovic Denoyer, and Hervé Jégou. Word translation without parallel data. ICLR 2018.
+[2] Guillaume Lample, Alexis Conneau, Marc’Aurelio Ranzato, Ludovic Denoyer, and Hervé Jégou. [Word translation without parallel data](https://openreview.net/forum?id=H196sainb). ICLR 2018.
 
-[3] Hiroaki Yamagiwa, Yusuke Takase, and Hidetoshi Shimodaira. Axis Tour: Word Tour Determines the Order of Axes in ICA-transformed Embeddings. arXiv 2024.
+[3] Hiroaki Yamagiwa, Yusuke Takase, and Hidetoshi Shimodaira. [Axis Tour: Word Tour Determines the Order of Axes in ICA-transformed Embeddings](https://aclanthology.org/2024.findings-emnlp.28/). EMNLP 2024 Findings.
 
-[4] Ciprian Chelba, Tomás Mikolov, Mike Schuster, Qi Ge, Thorsten Brants, Phillipp Koehn, and Tony Robinson. One billion word benchmark for measuring progress in statistical language modeling. INTER-SPEECH 2014.
+[4] Ciprian Chelba, Tomás Mikolov, Mike Schuster, Qi Ge, Thorsten Brants, Phillipp Koehn, and Tony Robinson. [-One billion word benchmark for measuring progress in statistical language modeling](https://www.isca-archive.org/interspeech_2014/chelba14_interspeech.html). INTER-SPEECH 2014.
 
-[5] Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg, and Li Fei-Fei. IJCV 2015.
+[5] Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg, and Li Fei-Fei. [ImageNet Large Scale Visual Recognition Challenge](https://link.springer.com/article/10.1007/s11263-015-0816-y). IJCV 2015.
 
+[6] Aapo Hyvärinen, and Erkki Oja. [Independent Component Analysis: Algorithms and Applications](https://www.sciencedirect.com/science/article/abs/pii/S0893608000000265). Neural networks 2000.
 
-[6] Aapo Hyvärinen, and Erkki Oja. Neural networks 2000.
+[7] Tomáš Musil, and David Mareček. [Exploring Interpretability of Independent Components of Word Embeddings with Automated Word Intruder Test](https://aclanthology.org/2024.lrec-main.605/). LREC-COLING 2024.
 
-[7] Tomáš Musil, and David Mareček. Independent Components of Word Embeddings Represent Semantic Features. arXiv 2022.
+[8] Momose Oyama, Hiroaki Yamagiwa, and Hidetoshi Shimodaira. [Understanding Higher-Order Correlations Among Semantic Components in Embeddings](https://aclanthology.org/2024.emnlp-main.169/). EMNLP 2024.
+
+[9] Hiroaki Yamagiwa, Momose Oyama, and Hidetoshi Shimodaira. [Revisiting Cosine Similarity via Normalized ICA-transformed Embeddings](https://aclanthology.org/2025.coling-main.497/). COLING 2025.
 
 ## Note
 
