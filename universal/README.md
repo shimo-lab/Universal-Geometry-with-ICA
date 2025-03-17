@@ -7,13 +7,13 @@
 ## Docker
 
 <!-- TRANSLATION_START -->
-This repository is intended to be run in a Docker environment. If you are not familiar with Docker, please set up an environment with torch==1.11.0 and install the packages listed in [docker/requirements.txt](docker/requirements.txt) accordingly.
+This repository is intended to be run in a Docker environment. If you are not familiar with Docker, please set up an environment with torch==1.11.0 and install the packages listed in [requirements.txt](requirements.txt) accordingly.
 <!--
-このリポジトリは Docker 環境での実行を想定しています．Docker に不慣れな方は，`torch==1.11.0` の環境を用意し，[docker/requirements.txt](docker/requirements.txt) にあるパッケージを適切にインストールして下さい．
+このリポジトリは Docker 環境での実行を想定しています．Docker に不慣れな方は，`torch==1.11.0` の環境を用意し，[requirements.txt](requirements.txt) にあるパッケージを適切にインストールして下さい．
 --->
 <!-- TRANSLATION_END -->
 
-### Build
+###  Docker build
 
 <!-- TRANSLATION_START -->
 Please create a Docker image as follows:
@@ -23,36 +23,35 @@ Please create a Docker image as follows:
 <!-- TRANSLATION_END -->
 
 ```bash
-docker build -t ${USER}/universal docker
+bash script/docker/build.sh
 ```
 
-### Run
+### Environment variable
 
 <!-- TRANSLATION_START -->
-Execution as root should be avoided if possible. For example, refer to the [docker document](https://docs.docker.com/engine/reference/commandline/run/) to properly set the `-u` option.
-
-If you don't mind running as root, you can execute the Docker container as follows:
+Set the `DOCKER_HOME` environment variable to specify the path of the directory to be mounted as the home directory inside the Docker container.
 <!--
-root 権限での実行は可能であれば避けて下さい．
-例えば，[docker document](https://docs.docker.com/engine/reference/commandline/run/) を参考に適切に `-u` オプションを設定して下さい．
-
-root 権限で構わない方は，以下のようにして Docker container を実行することができます．
+環境変数 `DOCKER_HOME` を設定して、Docker コンテナ内のホームディレクトリとしてマウントするディレクトリのパスを指定します．
 --->
 <!-- TRANSLATION_END -->
 
 ```bash
-docker run --rm -it --name ica_container \
---gpus device=0 \
--v $PWD:/working \
-${USER}/universal bash
+$ export DOCKER_HOME="path/to/your/docker_home"
 ```
 
+
+### Docker run
+
 <!-- TRANSLATION_START -->
-Please set the volume so that this directory becomes `/working`. When running Python scripts in an environment other than Docker, please add an option like `--root_dir path/to/universal`.
+Run the Docker container by passing the GPU ID as an argument:
 <!--
-このディレクトリが `/working` となるようにボリュームを設定してください．Docker 以外の環境で Python スクリプトを実行する際は `--root_dir path/to/universal` のようなオプションを追加してください．
+引数にGPU IDを渡して Docker コンテナを実行します：
 --->
 <!-- TRANSLATION_END -->
+
+```bash
+$ bash script/docker/run.sh 0
+```
 
 ---
 
