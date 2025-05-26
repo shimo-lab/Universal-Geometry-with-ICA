@@ -26,20 +26,6 @@ Please create a Docker image as follows:
 bash script/docker/build.sh
 ```
 
-### Environment variable
-
-<!-- TRANSLATION_START -->
-Set the `DOCKER_HOME` environment variable to specify the path of the directory to be mounted as the home directory inside the Docker container.
-<!--
-環境変数 `DOCKER_HOME` を設定して、Docker コンテナ内のホームディレクトリとしてマウントするディレクトリのパスを指定します．
---->
-<!-- TRANSLATION_END -->
-
-```bash
-$ export DOCKER_HOME="path/to/your/docker_home"
-```
-
-
 ### Docker run
 
 <!-- TRANSLATION_START -->
