@@ -23,7 +23,7 @@ Please create a Docker image as follows:
 <!-- TRANSLATION_END -->
 
 ```bash
-bash script/docker/build.sh
+bash scripts/docker/build.sh
 ```
 
 ### Docker run
@@ -36,7 +36,7 @@ Run the Docker container by passing the GPU ID as an argument:
 <!-- TRANSLATION_END -->
 
 ```bash
-$ bash script/docker/run.sh 0
+$ bash scripts/docker/run.sh 0
 ```
 
 ---
