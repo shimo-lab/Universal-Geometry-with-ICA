@@ -15,7 +15,7 @@ ipython==8.28.0
 jedi==0.19.1
 joblib==1.4.2
 jupyter_client==8.6.3
-jupyter_core==5.7.2
+jupyter_core>=5.8.1
 kiwisolver==1.4.7
 matplotlib==3.9.2
 matplotlib-inline==0.1.7
