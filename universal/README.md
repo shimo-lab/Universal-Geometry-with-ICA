@@ -201,6 +201,13 @@ Alternatively, embeddings for the following language sets used in the paper are 
 - [en-es-fr-de-it-ru (Google Drive)](https://drive.google.com/file/d/1UkRHaepZzPkeyY5S4ztY85DGOZqbFK09/view?usp=drive_link)
 
 <!-- TRANSLATION_START -->
+These embeddings are derived from [fastText](https://fasttext.cc/) vectors (Wikipedia and Common Crawl) and are distributed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+<!--
+これらの埋め込みは [fastText](https://fasttext.cc/) のベクトル（Wikipedia と Common Crawl）から作成したもので，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) で配布しています．
+--->
+<!-- TRANSLATION_END -->
+
+<!-- TRANSLATION_START -->
 Please place the downloaded embedding directories under `output/crosslingual/` as in `output/crosslingual/en-es-ru-ar-hi-zh-ja/`.
 <!--
 `output/crosslingual/en-es-ru-ar-hi-zh-ja/` のように `output/crosslingual/` 以下にダウンロードした埋め込みのディレクトリを配置して下さい．
@@ -494,14 +501,18 @@ Alternatively, the BERT embeddings used in the paper are available:
 --->
 <!-- TRANSLATION_END -->
 
-- [bert-base-uncased (Google Drive)](https://drive.google.com/file/d/18gVRvZq60ISEoJQvKnjrqy67TAP5P9b1/view?usp=drive_link)
+- [bert-base-uncased (Google Drive)](https://drive.google.com/file/d/1D4EX9QrhJRwZg64W_2myGXBnXQGvvtho/view?usp=sharing)
 
 <!-- TRANSLATION_START -->
-Please place the downloaded embeddings under `output/dynamic/` as in `output/dynamic/bert-pca-ica-100000.pkl`.
+This file contains line numbers instead of the text of the One Billion Word Benchmark. Place it as `output/dynamic/bert-pca-ica-100000-line_ids.pkl` and restore `output/dynamic/bert-pca-ica-100000.pkl` as follows:
 <!--
-`output/dynamic/bert-pca-ica-100000.pkl` のように `output/dynamic/` 以下にダウンロードした埋め込みを配置してください．
+このファイルは One Billion Word Benchmark のテキストの代わりに行番号を含みます．`output/dynamic/bert-pca-ica-100000-line_ids.pkl` として配置し，次のようにして `output/dynamic/bert-pca-ica-100000.pkl` を復元してください．
 --->
 <!-- TRANSLATION_END -->
+
+```bash
+python dynamic_restore_sentences.py
+```
 
 ### Figures
 
@@ -752,6 +763,13 @@ We used publicly available repositories. We are especially grateful for the foll
 
 - [MUSE](https://github.com/facebookresearch/MUSE?tab=readme-ov-file#ground-truth-bilingual-dictionaries)
 - [WeightedCorr](https://github.com/matthijsz/weightedcorr)
+
+<!-- TRANSLATION_START -->
+Some code is adapted from MUSE (CC BY-NC 4.0) and BERTScore (MIT). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+<!--
+一部のコードは MUSE（CC BY-NC 4.0）と BERTScore（MIT）を改変したものです．[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) を参照してください．
+--->
+<!-- TRANSLATION_END -->
 
 ### Paper
 

@@ -59,6 +59,9 @@ def load_txt_embeddings(args, logger):
                     table_words.add(word)
         return word_vec, table_words
 
+    # Adapted from read_txt_embeddings() in MUSE (with modifications).
+    # Copyright (c) 2017-present, Facebook, Inc. CC BY-NC 4.0.
+    # See universal/third_party_licenses/MUSE-LICENSE.
     def get_muse_words(emb_path, dim):
 
         word_vec = []

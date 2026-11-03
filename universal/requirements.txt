@@ -27,4 +27,5 @@ timm==0.6.13
 torchvision==0.12.0
 transformers>=4.38.0
 wandb==0.12.12
+WeightedCorr @ git+https://github.com/matthijsz/weightedcorr@d37f1f554d8b6a06bd4875af0b274c5747f71a43
 wordfreq==3.0.3
