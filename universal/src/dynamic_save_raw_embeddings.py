@@ -44,6 +44,10 @@ def main():
     model.to(device)
     model.eval()
 
+    # bert_encode(), truncate(), padding(), and prepare_text_sequences() are
+    # adapted from BERTScore. Copyright (c) 2019 Tianyi Zhang, Varsha Kishore,
+    # Felix Wu, Kilian Q. Weinberger, and Yoav Artzi. MIT License.
+    # See universal/third_party_licenses/bert_score-LICENSE.
     def bert_encode(x, attention_mask):
         with torch.no_grad():
             result = model(x.to(device),

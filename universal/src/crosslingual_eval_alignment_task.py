@@ -12,6 +12,10 @@ from tqdm import tqdm
 
 from utils import get_logger, pos_direct
 
+# The Faiss import, load_dictionary(), get_nn_avg_dist(), and
+# get_word_translation_accuracy() are adapted from MUSE (ported to NumPy).
+# Copyright (c) 2017-present, Facebook, Inc. CC BY-NC 4.0.
+# See universal/third_party_licenses/MUSE-LICENSE.
 try:
     import faiss
     FAISS_AVAILABLE = True
@@ -40,7 +44,7 @@ def parse_args():
 
 def load_dictionary(path, word2id1, word2id2, logger):
     '''
-    Return a torch tensor of size (n, 2) where n is the size of the
+    Return a NumPy array of size (n, 2) where n is the size of the
     loader dictionary, and sort it by source word frequency.
     '''
     assert os.path.isfile(path)
